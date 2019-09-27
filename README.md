@@ -9,7 +9,7 @@ Dockerized Factorio server
 
 * Start the container
 
-  `docker run --rm -ti -P -v factorio_data:/opt/factorio/userdata onurcc/factorio-server`
+  `docker run -d -v factorio_data:/opt/factorio/userdata onurcc/factorio-server`
 
 ## Customizing
 

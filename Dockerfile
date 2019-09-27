@@ -1,7 +1,7 @@
 FROM debian:buster
 
 # Version of Factorio server to build with
-ARG FACTORIO_VERSION=0.17.67
+ARG FACTORIO_VERSION=0.17.69
 
 # If set, update the server on start
 ENV UPDATE_ON_START=1

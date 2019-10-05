@@ -6,12 +6,4 @@ then
   update_factorio.py --apply-to /opt/factorio/bin/x64/factorio
 fi
 
-SAVE_FILE="${FACTORIO_USERDATA}/saves/game.zip"
-
-if [ ! -f "${SAVE_FILE}" ];
-then
-  echo "${SAVE_FILE} doesn't exist. Creating a new save..."
-  /opt/factorio/bin/x64/factorio --create ${SAVE_FILE}
-fi
-
-/opt/factorio/bin/x64/factorio --start-server ${SAVE_FILE}
+(cd /opt/factorio-server-manager && ./factorio-server-manager -dir /opt/factorio)
